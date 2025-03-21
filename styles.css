@@ -1,0 +1,146 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+#header {
+  display: flex;
+  background: linear-gradient(#C9A02F, #DBD039);
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;    
+  height: 85px;
+}
+
+#header-img {
+  width: 400px;
+  height: auto;
+  margin: 20px -22px;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+  margin-left: 30px;
+}
+
+
+#nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+#nav-bar ul {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: row;
+}
+
+main {
+  padding-top: 85px;
+}
+
+#form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#email {
+  width: 250px;
+  padding: 5px;
+  margin: 10px;
+}
+
+#submit {
+  padding: 10px;
+  font-size: 20px;
+  background-color: #deae2a;
+  border: 1px solid black;
+
+}
+
+#features {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#features p {
+  padding: 20px
+}
+
+i {
+  color: darkorange;
+}
+#how_it_works {
+  display: flex;
+  justify-content: center;
+}
+iframe {
+  max-width: 560px;
+  width: 100%;
+  border: 0px;
+}
+
+#pricing {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+}
+
+.trombone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: calc(100% / 3);
+}
+
+.head {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button {
+  background-color: darkorange;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px
+}
+@media only screen and (max-width: 800px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+ }
+
+  #nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+}
+  .nav-link {
+    padding: 10px;
+  }
+  main {
+    padding-top: 200px;
+  }
+  #features {
+    display: block;
+  }
+}
